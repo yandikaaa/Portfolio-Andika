@@ -1,0 +1,354 @@
+/*==================================================
+                    GOOGLE FONT
+==================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700;800&display=swap');
+
+/*==================================================
+                    RESET
+==================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+    background:#F8FAFC;
+    color:#0F172A;
+    transition:.35s;
+
+}
+
+img{
+
+    display:block;
+    max-width:100%;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+.container{
+
+    width:min(1200px,90%);
+    margin:auto;
+
+}
+
+/*==================================================
+                    COLOR
+==================================================*/
+
+:root{
+
+    --primary:#2563EB;
+    --primary-dark:#1D4ED8;
+
+    --border:#E2E8F0;
+
+    --shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+/*==================================================
+                    TOP BAR
+==================================================*/
+
+.top-bar{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin-bottom:60px;
+
+}
+
+.other-logo{
+
+    display:flex;
+    align-items:center;
+
+}
+
+.other-logo img{
+
+    width:48px;
+    height:auto;
+    display:block;
+
+}
+
+/*==================================================
+                    HEADER
+==================================================*/
+
+.other-header{
+
+    padding:90px 0 60px;
+
+}
+
+.back-btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:12px 24px;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.back-btn:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateX(-5px);
+
+}
+
+.other-header h1{
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:3rem;
+
+    margin-bottom:15px;
+
+}
+
+.other-desc{
+
+    max-width:650px;
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
+
+/*==================================================
+                    PROJECT
+==================================================*/
+
+.project-section{
+
+    padding-bottom:80px;
+
+}
+
+.project-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+
+    gap:35px;
+
+}
+
+.project-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.project-image{
+
+    width:100%;
+
+    height:220px;
+
+    overflow:hidden;
+
+    background:#DBEAFE;
+
+}
+
+.project-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+
+.project-card:hover .project-image img{
+
+    transform:scale(1.08);
+
+}
+
+.project-content{
+
+    padding:28px;
+
+}
+
+.project-content h3{
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:1.5rem;
+
+    margin-bottom:15px;
+
+}
+
+.project-content p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.project-content a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:12px 28px;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.project-content a:hover{
+
+    background:var(--primary-dark);
+
+}
+
+/*==================================================
+                    DARK MODE
+==================================================*/
+
+body.dark{
+
+    background:#0F172A;
+
+    color:#fff;
+
+}
+
+body.dark .other-desc{
+
+    color:#CBD5E1;
+
+}
+
+body.dark .project-card{
+
+    background:#1E293B;
+
+    border:1px solid #334155;
+
+}
+
+body.dark .project-content p{
+
+    color:#CBD5E1;
+
+}
+
+body.dark .project-image{
+
+    background:#334155;
+
+}
+
+/*==================================================
+                    RESPONSIVE
+==================================================*/
+
+@media(max-width:768px){
+
+    .other-header{
+
+        padding-top:60px;
+
+    }
+
+    .other-header h1{
+
+        font-size:2.2rem;
+
+    }
+
+    .project-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/*==================================================
+                    FOOTER
+==================================================*/
+
+footer{
+    background:#0F172A;
+    color:#fff;
+    text-align:center;
+    padding:35px 0;
+}
+
+footer p{
+    color:#CBD5E1;
+}
