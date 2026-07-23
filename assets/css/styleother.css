@@ -363,6 +363,7 @@ a{
     transform:translateY(40px) scale(.95);
     transition:.45s;
     z-index:2;
+    isolation:isolate;
 
 }
 
@@ -1017,13 +1018,13 @@ footer p{
 
 .prev-project{
 
-    left:-30px;
+    left:-24px;
 
 }
 
 .next-project{
 
-    right:-30px;
+    right:-24px;
 
 }
 
