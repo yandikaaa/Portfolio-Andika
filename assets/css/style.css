@@ -840,6 +840,25 @@ nav a:hover::after{
     background:var(--primary-dark);
 }
 
+.scroll-hint{
+
+    display:none;
+
+    text-align:center;
+
+    margin-top:18px;
+
+    color:#94A3B8;
+
+    font-size:.9rem;
+
+    font-weight:500;
+
+    letter-spacing:.3px;
+
+}
+
+
 /*==================================================
                     EXPERIENCE
 ==================================================*/
@@ -1242,6 +1261,12 @@ nav a.active::after{
         min-width:90%;
 
     }
+
+    .scroll-hint{
+
+    display:block;
+
+}
 
 }
 
