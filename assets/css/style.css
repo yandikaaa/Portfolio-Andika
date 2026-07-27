@@ -1061,6 +1061,10 @@ body.dark .contact-card{
     border-color:#334155;
 }
 
+body.dark .info-card span{
+    color:#FFFFFF;
+}
+
 body.dark .project-image{
     background:#334155;
     color:#fff;
